@@ -1,10 +1,11 @@
 package dsa450;
 import java.util.HashMap;
 import java.util.Iterator;
-
-import org.json.JSONArray;
 import org.json.JSONObject;
-
+/*
+ * @author Amit
+ * Program to convert JSON String to MAP
+ * */
 public class JsonParser {
    
     public static void main(String[] args) {
@@ -30,9 +31,7 @@ public class JsonParser {
                 	String k =(String) tempItr.next();
                 	itemsMap.put(k,(int) tempjson.get(k));
                 }
-                beveragesMap.put(key, itemsMap);
-                //itemsMap.clear();
-                
+                beveragesMap.put(key, itemsMap);                
             }
             System.out.println("beverages : "+beveragesMap);
             System.out.println("totalQuantity : "+totalQuantityMap);
